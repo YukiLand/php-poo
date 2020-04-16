@@ -23,16 +23,13 @@ class Form{
         $this->fields[] = $field;
         return $this;
       }
-      public function addTextField($name, $value){
-        return $this->addField(new TextField($name, $value));
-      }
 /*Create a new field*/
     public function addTextField($name, $value){
         $this->addField (new TextField($name, $value));
         return $this;
     }
     public function addNumberField($name, $value){
-        $this->addField(new NumberField($name, $value);
+        $this->addField(new NumberField($name, $value));
         return $this;
     }
 /*Create a Checkbox*/
